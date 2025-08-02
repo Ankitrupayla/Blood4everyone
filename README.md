@@ -77,3 +77,8 @@ git clone https://github.com/Ankitrupayla/Blood4everyone.git
 cd Blood4everyone
 npm install
 node app.js
+
+🙋‍♂️ Author
+Ankit Rupayla
+📧 ankitrupayla@gmail.com
+🔗 LinkedIn | GitHub
