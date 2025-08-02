@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood4Everyone</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Blood4Everyone - Donate blood, save lives. Connect with donors and nearby blood banks in India.">
+  <link rel="icon" href="/image/favicon.ico" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Header (Loaded Dynamically) -->
+  <div id="header"></div>
+
+  <!-- Hero Section -->
+  <header class="hero-section position-relative text-white overflow-hidden">
+    <video class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 z-n1" autoplay muted loop playsinline>
+      <source src="/videos/blood-donation.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="container hero-content d-flex justify-content-center align-items-center text-center min-vh-100">
+      <div class="bg-dark bg-opacity-50 p-5 rounded-4 shadow-lg">
+        <h1 class="display-4 fw-bold text-shadow">Donate Blood. Save Lives.</h1>
+        <p class="lead">Join the movement to make blood accessible to everyone in need.</p>
+        <a href="/public/donate.html" class="btn btn-warning fw-semibold px-4 py-2 mt-3 shadow-lg rounded-pill">Donate Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mission Section -->
+  <main class="container my-5">
+    <h2 class="text-center text-danger mb-4">Our Mission</h2>
+    <p class="lead text-center">Blood4Everyone connects life-saving donors with patients across India. We aim for timely and secure blood distribution through technology and community efforts.</p>
+  </main>
+
+  <!-- Features Section -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-bell fa-2x text-danger mb-3"></i>
+              <h5 class="card-title text-danger">Real-Time Alerts</h5>
+              <p>Get notified instantly for emergency blood needs in your area.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="/public/blood-banks.html" class="text-decoration-none">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <i class="fas fa-map-marker-alt fa-2x text-danger mb-3"></i>
+                <h5 class="card-title text-danger">Nearby Blood Banks</h5>
+                <p class="mb-0">Locate and contact verified blood banks easily via map.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="fas fa-user-shield fa-2x text-danger mb-3"></i>
+              <h5 class="card-title text-danger">Secure Profiles</h5>
+              <p>Your donor/recipient details are encrypted and private.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blood Bank Section -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center text-danger mb-4">Find Blood Banks Near You</h2>
+      <div class="row">
+        <!-- Google Map -->
+        <div class="col-md-6 mb-4">
+          <div class="ratio ratio-4x3 shadow rounded-4 overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.136136026456!2d75.85772507533661!3d22.721675079406588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd4edb8fdf41%3A0x5b5ef74c15d1d21d!2sIndore%20Red%20Cross%20Blood%20Bank!5e0!3m2!1sen!2sin!4v1693564607394!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- List of Blood Banks -->
+        <div class="col-md-6">
+          <ul class="list-group shadow">
+            <li class="list-group-item">
+              <h5 class="text-danger mb-1">Red Cross Blood Bank</h5>
+              <p class="mb-1">MG Road, Indore</p>
+              <small>Phone: +91 731 2547077</small><br />
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Red+Cross+Blood+Bank+Indore" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Get Directions</a>
+            </li>
+            <li class="list-group-item">
+              <h5 class="text-danger mb-1">M.Y. Hospital Blood Bank</h5>
+              <p class="mb-1">Mahatma Gandhi Memorial Medical College, Indore</p>
+              <small>Phone: +91 731 2527383</small><br />
+              <a href="https://www.google.com/maps/dir/?api=1&destination=MY+Hospital+Blood+Bank+Indore" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Get Directions</a>
+            </li>
+            <li class="list-group-item">
+              <h5 class="text-danger mb-1">Arihant Hospital & Research Centre</h5>
+              <p class="mb-1">Ring Road, Indore</p>
+              <small>Phone: +91 731 4242400</small><br />
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Arihant+Hospital+Indore" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Get Directions</a>
+            </li>
+            <li class="list-group-item">
+              <h5 class="text-danger mb-1">CHL Apollo Blood Bank</h5>
+              <p class="mb-1">AB Road, LIG Square, Indore</p>
+              <small>Phone: +91 731 4774444</small><br />
+              <a href="https://www.google.com/maps/dir/?api=1&destination=CHL+Hospital+Indore" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Get Directions</a>
+            </li>
+            <li class="list-group-item">
+              <h5 class="text-danger mb-1">Bombay Hospital Blood Bank</h5>
+              <p class="mb-1">Ring Road, Vijay Nagar, Indore</p>
+              <small>Phone: +91 731 4771100</small><br />
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Bombay+Hospital+Indore" target="_blank" class="btn btn-outline-danger btn-sm mt-2">Get Directions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5 bg-danger bg-opacity-10">
+    <div class="container text-center">
+      <h2 class="text-danger mb-4">Inspiring Stories</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="p-4 bg-white shadow rounded-3">
+            <p>"Donating blood gave me a sense of purpose. The process was easy and fulfilling."</p>
+            <h6 class="text-danger mt-3">– Priya Sharma</h6>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="p-4 bg-white shadow rounded-3">
+            <p>"My child received blood during surgery. Thank you to all selfless donors out there."</p>
+            <h6 class="text-danger mt-3">– Anil Verma</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Loaded Dynamically) -->
+  <div id="footer"></div>
+
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/public/js/layout.js"></script>
+  <script src="/public/js/card-click.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+body { padding-top: 80px; font-family: 'Segoe UI', sans-serif; }
+.hero { height: 70vh; position: relative; overflow: hidden; }
+.hero-overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center;
+  flex-direction: column; text-align: center;
+}
+.glass-card {
+  background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);
+  border-radius: 12px; padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.glass-btn {
+  background: rgba(255,0,0,0.6); border: none;
+  border-radius: 8px; color: #fff; padding: 0.75rem 1.5rem;
+  backdrop-filter: blur(8px); transition: transform 0.2s ease;
+}
+.glass-btn:hover { background: rgba(200,0,0,0.8); transform: scale(1.05); }
+.glass-heading {
+  display: inline-block; background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(6px); padding: 0.5rem 1rem; border-radius: 8px;
+  font-weight: bold; text-transform: uppercase;
+}
+table.glass-table {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+table.glass-table thead {
+  background: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+table.glass-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+form.glass-card .form-control, .form-select {
+  background: rgba(255,255,255,0.5);
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+form.glass-card .btn-danger {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+/* Glass Card Container */
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Glass Heading */
+.glass-heading {
+  font-weight: 700;
+  color: #dc3545;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* 3D Glass Inputs */
+input.form-control, select.form-select, textarea.form-control {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+input.form-control:focus, select.form-select:focus, textarea.form-control:focus {
+  box-shadow: 0 6px 16px rgba(255, 0, 0, 0.4);
+  border-color: #dc3545;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* 3D Button Style */
+.btn-danger {
+  box-shadow: 0 4px 0 #a71d2a;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Glass Table */
+.glass-table {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.nav-link.nav-btn {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link.nav-btn:hover {
+  background-color: rgba(220, 53, 69, 0.1); /* light transparent red */
+  border-radius: 0.5rem;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+.logo-hover {
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.logo-hover:hover {
+  background: rgba(220, 53, 69, 0.1); /* light transparent red */
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.2);
+}
+.table-wrapper {
+  max-height: 65vh;
+  overflow: auto;
+}
+
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(220, 53, 69, 0.4);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 250px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 200px;
+  }
+}
+/* Volunteer Form Styles */
+form#volunteerForm {
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+  transition: box-shadow 0.3s ease;
+}
+
+form#volunteerForm:hover {
+  box-shadow: 0 0 20px rgba(220, 53, 69, 0.4);
+}
+form.shadow {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+form.shadow:hover {
+  transform: scale(1.01);
+}
